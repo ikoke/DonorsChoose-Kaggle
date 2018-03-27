@@ -1,4 +1,4 @@
-I have been intersted in machine learning & Artificial Intelligence since College. And I have worked on some ML projects. However, this happens to be my first Kaggle Competition. And my first Jupyter notebook.
+I have been intersted in machine learning & Artificial Intelligence since College. And I have worked on some ML projects. However, this happens to be my first Kaggle Competition. And my first time using Jupyter notebook.
 
 Oh, and my Python is a bit patchy, so please excuse any crudeness in the code.
 
