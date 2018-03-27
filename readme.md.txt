@@ -53,6 +53,29 @@ Sizable increase to 0.58502 (32 places up the leaderboard).
 
 Score= 0.57600
 
+> JupyterNotebookDonorsChoose5-> Simple random forest- along with state, grade,project category, project subcategory, number of projects submitted by teacher in past as well as the total projected cost of the project (calculated from the resource file).
 
+Score= .59206
+
+>JupyterNotebookDonorsChoose5.1-> same as 5. Just ried to fix a possible issue with the integer encoding of categorical variables
+
+Score=0.59003
+
+>JupyterNotebookDonorsChoose6.2 -> Neural Net.
+clf = MLPClassifier(solver='adam', activation='tanh',alpha=2e-4,hidden_layer_sizes=(100, 25), max_iter=500)Removed school state parameter, reintroduced project subcategories
+Score- 0.57750
+
+> JupyterNotebookDonorsChoose6.3-> Neural Net. 
+Tried different hyperparameters
+
+1)clf = MLPClassifier(solver='adam', activation='tanh',alpha=2e-4,hidden_layer_sizes=(100, 25), max_iter=500) {same as 6.2's hyperparams. Also removed grade category}
+Score= 0.59373
+2) clf = MLPClassifier(solver='adam', activation='relu',alpha=2e-4,hidden_layer_sizes=(120, 30), max_iter=500)
+Score= .58627 
+
+
+> JupyterNotebookDonorsChoose6.4-> Neural Net model. Also removed project subcategories. So only takes project categories, cost & number of past projectsclf = MLPClassifier(solver='adam', activation='tanh',alpha=2e-4,hidden_layer_sizes=(100, 25), max_iter=500)
+
+Score= .59568
 
 BTW, I used an Azure Linux Data Science VM for this, & I must say, it seems pretty sweet. All the bells & whistles are pre-installed. No setup required. (Disclaimer: I currently work for Microsoft)
